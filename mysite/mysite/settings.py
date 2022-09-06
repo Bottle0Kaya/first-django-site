@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-b!7mj3@!rejsgjb$7g#)&39!%8tkx32n-@-@kckuqtdxf9(n66
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [falseflamingo.herokuapp.com/]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -161,4 +161,4 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
 )
-heroku.setting(locals())
+heroku.settings(locals())
